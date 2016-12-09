@@ -17,6 +17,7 @@
 		C36A72111DFB372A00557C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36A720F1DFB372A00557C49 /* LaunchScreen.storyboard */; };
 		C36A721C1DFB372A00557C49 /* Issue_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A721B1DFB372A00557C49 /* Issue_MapTests.swift */; };
 		C36A72271DFB372A00557C49 /* Issue_MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A72261DFB372A00557C49 /* Issue_MapUITests.swift */; };
+		C36A72351DFB3B1D00557C49 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36A72341DFB3B1D00557C49 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		C36A72221DFB372A00557C49 /* Issue MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Issue MapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36A72261DFB372A00557C49 /* Issue_MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_MapUITests.swift; sourceTree = "<group>"; };
 		C36A72281DFB372A00557C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36A72341DFB3B1D00557C49 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DF27B6D60D837E243124B83C /* Pods_Issue_MapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Issue_MapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF91C9EE25BD1843333A6AF4 /* Pods-Issue MapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Issue MapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Issue MapUITests/Pods-Issue MapUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6E839AF0EA809094A3B7105 /* Pods-Issue MapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Issue MapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Issue MapTests/Pods-Issue MapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36A72351DFB3B1D00557C49 /* MapKit.framework in Frameworks */,
 				7692FD2A3B9B8228AAE01FF2 /* Pods_Issue_Map.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +95,7 @@
 		5D73C7617F1FCCE43F6407AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C36A72341DFB3B1D00557C49 /* MapKit.framework */,
 				80C301D9BB1A6ACA33A5DD40 /* Pods_Issue_Map.framework */,
 				DF27B6D60D837E243124B83C /* Pods_Issue_MapTests.framework */,
 				6A2993FEA0DFA1C32D087850 /* Pods_Issue_MapUITests.framework */,
@@ -243,6 +247,11 @@
 					C36A72021DFB372A00557C49 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C36A72161DFB372A00557C49 = {
 						CreatedOnToolsVersion = 8.1;
@@ -698,6 +707,7 @@
 				C36A722D1DFB372A00557C49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C36A722E1DFB372A00557C49 /* Build configuration list for PBXNativeTarget "Issue MapTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +716,7 @@
 				C36A72301DFB372A00557C49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C36A72311DFB372A00557C49 /* Build configuration list for PBXNativeTarget "Issue MapUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +725,7 @@
 				C36A72331DFB372A00557C49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
