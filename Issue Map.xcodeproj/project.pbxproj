@@ -18,6 +18,10 @@
 		C36A721C1DFB372A00557C49 /* Issue_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A721B1DFB372A00557C49 /* Issue_MapTests.swift */; };
 		C36A72271DFB372A00557C49 /* Issue_MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A72261DFB372A00557C49 /* Issue_MapUITests.swift */; };
 		C36A72351DFB3B1D00557C49 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36A72341DFB3B1D00557C49 /* MapKit.framework */; };
+		C36A723A1DFB3F7A00557C49 /* BitbucketAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A72391DFB3F7A00557C49 /* BitbucketAPIService.swift */; };
+		C36A723C1DFB40F500557C49 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A723B1DFB40F500557C49 /* Issue.swift */; };
+		C36A723E1DFB411A00557C49 /* IssueAPIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A723D1DFB411A00557C49 /* IssueAPIResult.swift */; };
+		C36A72401DFB421300557C49 /* IssuesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A723F1DFB421300557C49 /* IssuesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		C36A72261DFB372A00557C49 /* Issue_MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue_MapUITests.swift; sourceTree = "<group>"; };
 		C36A72281DFB372A00557C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36A72341DFB3B1D00557C49 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C36A72391DFB3F7A00557C49 /* BitbucketAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BitbucketAPIService.swift; path = Model/BitbucketAPIService.swift; sourceTree = "<group>"; };
+		C36A723B1DFB40F500557C49 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Issue.swift; path = Model/Issue.swift; sourceTree = "<group>"; };
+		C36A723D1DFB411A00557C49 /* IssueAPIResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IssueAPIResult.swift; path = Model/IssueAPIResult.swift; sourceTree = "<group>"; };
+		C36A723F1DFB421300557C49 /* IssuesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IssuesListViewController.swift; path = Controllers/IssuesListViewController.swift; sourceTree = "<group>"; };
 		DF27B6D60D837E243124B83C /* Pods_Issue_MapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Issue_MapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF91C9EE25BD1843333A6AF4 /* Pods-Issue MapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Issue MapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Issue MapUITests/Pods-Issue MapUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6E839AF0EA809094A3B7105 /* Pods-Issue MapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Issue MapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Issue MapTests/Pods-Issue MapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,11 +149,10 @@
 		C36A72051DFB372A00557C49 /* Issue Map */ = {
 			isa = PBXGroup;
 			children = (
+				C36A72381DFB3F2000557C49 /* Model */,
 				C36A72061DFB372A00557C49 /* AppDelegate.swift */,
-				C36A72081DFB372A00557C49 /* ViewController.swift */,
-				C36A720A1DFB372A00557C49 /* Main.storyboard */,
-				C36A720D1DFB372A00557C49 /* Assets.xcassets */,
-				C36A720F1DFB372A00557C49 /* LaunchScreen.storyboard */,
+				C36A72371DFB3F1900557C49 /* Controllers */,
+				C36A72361DFB3F1200557C49 /* Views */,
 				C36A72121DFB372A00557C49 /* Info.plist */,
 			);
 			path = "Issue Map";
@@ -167,6 +174,35 @@
 				C36A72281DFB372A00557C49 /* Info.plist */,
 			);
 			path = "Issue MapUITests";
+			sourceTree = "<group>";
+		};
+		C36A72361DFB3F1200557C49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C36A720A1DFB372A00557C49 /* Main.storyboard */,
+				C36A720D1DFB372A00557C49 /* Assets.xcassets */,
+				C36A720F1DFB372A00557C49 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C36A72371DFB3F1900557C49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C36A72081DFB372A00557C49 /* ViewController.swift */,
+				C36A723F1DFB421300557C49 /* IssuesListViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C36A72381DFB3F2000557C49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C36A72391DFB3F7A00557C49 /* BitbucketAPIService.swift */,
+				C36A723B1DFB40F500557C49 /* Issue.swift */,
+				C36A723D1DFB411A00557C49 /* IssueAPIResult.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,8 +491,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36A72401DFB421300557C49 /* IssuesListViewController.swift in Sources */,
 				C36A72091DFB372A00557C49 /* ViewController.swift in Sources */,
+				C36A723A1DFB3F7A00557C49 /* BitbucketAPIService.swift in Sources */,
+				C36A723E1DFB411A00557C49 /* IssueAPIResult.swift in Sources */,
 				C36A72071DFB372A00557C49 /* AppDelegate.swift in Sources */,
+				C36A723C1DFB40F500557C49 /* Issue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
